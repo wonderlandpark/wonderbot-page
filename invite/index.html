@@ -1,0 +1,418 @@
+<html><head>
+  <head>
+    <meta charset="utf-8">
+    <title>원더봇</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="더 쉽고 나은 디스코드. 원더봇" name="description">
+  
+    <!-- Favicons -->
+    <link href="img/Wonder_Bot.png" rel="icon">
+    <link href="img/Wonder_Bot.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+<style type="text/css">/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+
+</style></head>
+<body>
+  
+    <header class="header">
+        <div class="container-fluid">
+    
+          <div id="logo" class="pull-left">
+            <h1><a href="#intro" class="scrollto">Wonder_Bot</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="#intro">홈</a></li>
+              
+              <li class="menu-has-children"><a href="">링크</a>
+                <ul>
+                  <li><a href="http://discord.wonderbot.xyz">원더봇 서포트(디스코드)</a></li>
+                  <li><a href="https://discordbots.org/bot/387548561816027138">DBL</a></li>
+                  <li><a href="http://dev.wonderbot.xyz">개발자 소개 페이지</a></li>
+                  <!-- <li><a href="#"></a></li> -->
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+        <br><br   >
+        <span class="title">원더봇 커스텀 초대하기</span>
+      </header><!-- #head -->
+      
+  <br>
+      <div class="head">
+          
+          
+          </div>
+<div class="container stacky-footer">
+<div class="result">
+<p>
+<span class="permissions">권한: <code id="number">0</code></span>
+
+<span class="equation">계산: <code id="equation">0x0</code></span>
+<h5>뭐가 뭔지 모르겠나요?                     <a href="https://discordapp.com/oauth2/authorize?client_id=387548561816027138&scope=bot&permissions=2146958847&redirect_uri=/invite/success.html"><strong>이곳</strong></a>에서 추천 권한으로 초대하세요!</h5>
+</p>
+</div>
+<div class="selector">
+<div class="col-me-maybe">
+
+<h3>일반 권한</h3>
+<ul>
+<li>
+<input id="generalAdministrator" type="checkbox" onclick="recalculate()">
+<label class="discordblue" for="generalAdministrator">관리자</label>
+</li>
+<li>
+<input id="generalViewAuditLog" type="checkbox" onclick="recalculate()">
+<label for="generalViewAuditLog">로그 보기</label>
+</li>
+<li>
+<input id="generalManageServer" type="checkbox" onclick="recalculate()">
+<label for="generalManageServer">서버 관리</label>
+</li>
+<li>
+<input id="generalManageRoles" type="checkbox" onclick="recalculate()">
+<label for="generalManageRoles">역할 관리</label>
+</li>
+<li>
+<input id="generalManageChannels" type="checkbox" onclick="recalculate()">
+<label for="generalManageChannels">채널 관리</label>
+</li>
+<li>
+<input id="generalKickMembers" type="checkbox" onclick="recalculate()">
+<label for="generalKickMembers">멤버 추방</label>
+</li>
+<li>
+<input id="generalBanMembers" type="checkbox" onclick="recalculate()">
+<label for="generalBanMembers">멤버 차단</label>
+</li>
+<li>
+<input id="generalCreateInstantInvite" type="checkbox" onclick="recalculate()">
+<label for="generalCreateInstantInvite">초대 링크 생성</label>
+</li>
+<li>
+<input id="generalChangeNickname" type="checkbox" onclick="recalculate()">
+<label for="generalChangeNickname">닉네임 변경</label>
+</li>
+<li>
+<input id="generalManageNicknames" type="checkbox" onclick="recalculate()">
+<label for="generalManageNicknames">닉네임 관리</label>
+</li>
+<li>
+<input id="generalManageEmojis" type="checkbox" onclick="recalculate()">
+<label for="generalManageEmojis">이모지 관리</label>
+</li>
+<li>
+<input id="generalManageWebhooks" type="checkbox" onclick="recalculate()">
+<label for="generalManageWebhooks">웹훅 관리</label>
+</li>
+</ul>
+</div>
+<div class="col-me-maybe">
+<h3>텍스트 권한</h3>
+<ul>
+<li>
+<input id="textReadMessages" type="checkbox" onclick="recalculate(this)">
+<label class="orangutan-not-orange" for="textReadMessages">채널 읽기</label>
+</li>
+<li>
+<input id="textSendTTSMessages" type="checkbox" onclick="recalculate()">
+<label for="textSendTTSMessages">TTS 메세지 전송</label>
+</li>
+<li>
+<input id="textEmbedLinks" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="textEmbedLinks">링크 전송</label>
+</li>
+ <li>
+<input id="textReadMessageHistory" type="checkbox" onclick="recalculate()">
+<label for="textReadMessageHistory">메세지 기록 보기</label>
+</li>
+<li>
+<input id="textUseExternalEmojis" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange"for="textUseExternalEmojis">외부 이모지 사용</label>
+</li>
+<li>
+<input id="textSendMessages" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange"for="textSendMessages">메세지 전송</label>
+</li>
+<li>
+<input id="textManageMessages" type="checkbox" onclick="recalculate()">
+<label for="textManageMessages">메세지 관리</label>
+</li>
+<li>
+<input id="textAttachFiles" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange"for="textAttachFiles">파일 첨부</label>
+</li>
+<li>
+<input id="textMentionEveryone" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange"for="textMentionEveryone">@everyone 맨션</label>
+</li>
+<li>
+<input id="textAddReactions" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange"for="textAddReactions">반응 추가</label>
+</li>
+</ul>
+</div>
+<div class="col-me-maybe">
+<h3>음성 권한</h3>
+<ul>
+<li>
+<input id="voiceViewChannel" type="checkbox" onclick="recalculate(this)">
+<label for="voiceViewChannel">채널 읽기</label>
+</li>
+<li>
+<input id="voiceConnect" type="checkbox" onclick="recalculate()">
+<label for="voiceConnect">음성 연결</label>
+</li>
+<li>
+<input id="voiceMuteMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceMuteMembers">멤버 뮤트</label>
+</li>
+<li>
+<input id="voiceMoveMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceMoveMembers">멤버 이동</label>
+</li>
+<li>
+<input id="voiceSpeak" type="checkbox" onclick="recalculate()">
+<label for="voiceSpeak">말하기</label>
+</li>
+<li>
+<input id="voiceDeafenMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceDeafenMembers">멤버 음소거</label>
+</li>
+<li>
+<input id="voiceUseVAD" type="checkbox" onclick="recalculate()">
+<label for="voiceUseVAD">음성 활동 사용</label>
+</li>
+<li>
+<input id="voicePrioritySpeaker" type="checkbox" onclick="recalculate()">
+<label for="voicePrioritySpeaker">눌러서 말하기</label>
+</li>
+</ul>
+</div>
+</div>
+<p><span class="orangutan-not-orange">노란색 = 원더봇에서 관리 기능을 제외한 기본적인 명령어 사용에 필수적인 권한입니다.</span></p>
+<p><span class="discordblue">파란색 = 이 권한만 있다면 원더봇에게 모든 권한을 주시는 것과 동일합니다!</span></p>
+
+<div class="oauth">
+<span>초대링크: <a href="#" id="invite"></a></span>
+</div>
+</div>
+
+    
+    </page></div></div>  <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-info">
+                <h3>원더봇</h3>
+                <p>더 나은 디스코드. 원더봇</p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>바로가기</h4>
+                <ul>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="index.html">홈</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="#">이용 약관</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="#">개인정보 약관</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>연락하기</h4>
+                <p>
+                 <a class="discord" href="http://discord.wonderbot.xyz">원더봇 서포트</a>
+                 <br>
+                  <strong>Email:</strong> <a href="mailto:wonderbotsupport@naver.com">wonderbotsupport@naver.com</a><br>
+                </p>
+    
+                <div class="social-links">
+                  <a href="http://discord.wonderbot.xyz" class="discord"><i class="fab fa-discord"></i></a>
+                  <a href="http://twitter.wonderbot.xyz" class="twitter"><i class="fab fa-twitter"></i></a>
+                  
+                </div>
+    
+              </div>
+    
+              
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; 2018~2019 <strong>Team. Wonder_Bot</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+            -->
+            Designed By <a href="https://bootstrapmade.com/">Bootstrap Templates</a>
+          </div>
+        </div>
+      </footer><!-- #footer -->
+  <!-- built files will be auto injected -->
+
+  <script type="text/javascript">
+    var perms = {
+        // General
+        generalCreateInstantInvite: 0x1,
+        generalKickMembers: 0x2,
+        generalBanMembers: 0x4,
+        generalAdministrator: 0x8,
+        generalManageChannels: 0x10,
+        generalManageServer: 0x20,
+        generalChangeNickname: 0x4000000,
+        generalManageNicknames: 0x8000000,
+        generalManageRoles: 0x10000000,
+        generalManageWebhooks: 0x20000000,
+        generalManageEmojis: 0x40000000,
+        generalViewAuditLog: 0x80,
+        // Text
+        textAddReactions: 0x40,
+        textReadMessages: 0x400,
+        textSendMessages: 0x800,
+        textSendTTSMessages: 0x1000,
+        textManageMessages: 0x2000,
+        textEmbedLinks: 0x4000,
+        textAttachFiles: 0x8000,
+        textReadMessageHistory: 0x10000,
+        textMentionEveryone: 0x20000,
+        textUseExternalEmojis: 0x40000,
+        // Voice
+        voiceViewChannel: 0x400,
+        voiceConnect: 0x100000,
+        voiceSpeak: 0x200000,
+        voiceMuteMembers: 0x400000,
+        voiceDeafenMembers: 0x800000,
+        voiceMoveMembers: 0x1000000,
+        voiceUseVAD: 0x2000000,
+        voicePrioritySpeaker: 0x100
+    };
+    var darkTheme = true;
+
+
+
+    function recalculate(element, perm, noSet) {
+        if(element) {
+            if(element.id === "textReadMessages") {
+                document.getElementById("voiceViewChannel").checked = element.checked;
+            }
+            if(element.id === "voiceViewChannel") {
+                document.getElementById("textReadMessages").checked = element.checked;
+            }
+        }
+        var perm = perm || 0;
+        var eq = [];
+        for(var key in perms) {
+            if(key !== "voiceViewChannel" && document.getElementById(key).checked) {
+                perm += perms[key];
+                eq.push("0x" + perms[key].toString(16));
+            }
+        }
+        eq = " = " + eq.join(" | ")
+        document.getElementById("number").innerHTML = "" + perm;
+        document.getElementById("equation").innerHTML = perm + eq;
+
+        if(!noSet) {
+            setHash("" + perm);
+        }
+
+        if(perm != 0) {
+            var clientID = "387548561816027138"
+            
+           
+  document.getElementById("invite").className = "";
+            
+
+            
+
+            var url = "https://discordapp.com/oauth2/authorize?client_id=" + "387548561816027138" +
+                "&scope=" + "bot" +
+                "&permissions=" + perm +
+                "&redirect_uri=http://wonderbot.xyz/invite/success.html"
+
+            
+         
+
+            document.getElementById("invite").innerHTML = document.getElementById("invite").href = url;
+        } else {
+            
+            document.getElementById("invite").innerHTML = "https://discordapp.com/oauth2/authorize?client_id=" + "387548561816027138" +
+                "&scope=" + "bot" +
+                "&permissions=" + perm +
+                "&redirect_uri=http://wonderbot.xyz/invite/success.html";
+            document.getElementById("invite").href = document.getElementById("invite").innerHTML;
+        }
+    }
+
+    function getHash(hash) {
+        hash = hash || window.location.hash;
+        if(hash && hash.length > 1) {
+            return hash.substring(1);
+        } else {
+            return null;
+        }
+    }
+
+    function setHash(data) {
+        if(history.pushState) {
+            history.pushState(null, null, "#" + data);
+        } else {
+            window.location.hash = "#" + data;
+        }
+    }
+
+    window.onpopstate = function(event) {
+        syncCheckboxes(+getHash(event.target.location.hash));
+        recalculate(null, null, true);
+    }
+
+    function syncCheckboxes(perm) {
+        for(let key in perms) {
+            if(perm & perms[key]) {
+                document.getElementById(key).checked = true;
+            }
+        }
+    }
+
+    syncCheckboxes(+getHash());
+    recalculate(null, null, true);
+</script>
+<script>document.open("https://wonderbot.xyz/invite")</script>
+</body></html>
