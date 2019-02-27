@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>원더봇 - 초대완료</title>
+  <title>원더봇 - 404</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="더 쉽고 나은 디스코드. 원더봇" name="description">
@@ -27,7 +27,7 @@
 
 
   <!-- Main Stylesheet File -->
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: BizPage
@@ -43,13 +43,13 @@
     Header
   ============================-->
   <header id="header">
-      <div class="container-fluid">
+    <div class="container-fluid">
 
-          <div id="logo" class="pull-left">
-            <h1><a href="../index.html" class="scrollto">Wonder_Bot</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
-          </div>
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto">Wonder_Bot</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -91,22 +91,22 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active"> 
-            <div id="clouds">
-              <div class="cloud x1"></div>
-              <div class="cloud x1_5"></div>
-              <div class="cloud x2"></div>
-              <div class="cloud x3"></div>
-              <div class="cloud x4"></div>
-              <div class="cloud x5"></div>
-          </div>
+          <div class="carousel-item active">
+              <div id="clouds">
+                  <div class="cloud x1"></div>
+                  <div class="cloud x1_5"></div>
+                  <div class="cloud x2"></div>
+                  <div class="cloud x3"></div>
+                  <div class="cloud x4"></div>
+                  <div class="cloud x5"></div>
+              </div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>원더봇을 초대해주셔서 감사합니다!</h2>
-                <p>더 열심히 하는 원더봇이 되겠습니다!</p>
-                <a href="../index.html" class="btn-get-started scrollto">메인으로 가기</a>
+                <h2>여긴 아무것도 없는걸요?</h2>
+                <p>길을 잘못 들어오셨네요!<br><br><code>new Error("404")</code></p>
+                <a href="index.html" class="btn-get-started scrollto">메인으로 가기</a>
                 <br>
-                <a href="http://discord.wonderbot.xyz" class="btn-discord">원더봇 서포트</a>
+                <a onclick="javascript:history.back()" class="btn-discord">뒤로가기</a>
                 
               </div>
             </div>
@@ -116,7 +116,6 @@
 
           
 
-       
 
       </div>
     </div>
@@ -184,7 +183,7 @@
     </div>
   </footer><!-- #footer -->
 
-  <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+  
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -204,7 +203,7 @@
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="../js/main.js"></script>
+  <script src="js/main.js"></script>
   <style>
        
  
@@ -215,159 +214,159 @@
              
   
               
-      hr{
-          padding: 0;
-          border: none;
-          border-top: 5px solid #fff;
-          color: #fff;
-          text-align: center;
-          margin: 0px auto;
-          width: 420px;
-          height:10px;
-          z-index: -10;
-      }
-      
-      hr:after {
-          content: "\2022";
-          display: inline-block;
-          position: relative;
-          top: -0.75em;
-          font-size: 2em;
-          padding: 0 0.2em;
-          background: #33cc99;
-      }
-      
-      .cloud {
-          width: 350px; height: 120px;
-
-          background: #33cc99;
-          background: linear-gradient(top, #33cc99 100%);
-          background: -webkit-linear-gradient(top, #33cc99 100%);
-          background: -moz-linear-gradient(top, #33cc99 100%);
-          background: -ms-linear-gradient(top, #33cc99 100%);
-          background: -o-linear-gradient(top, #33cc99 100%);
-
-          border-radius: 100px;
-          -webkit-border-radius: 100px;
-          -moz-border-radius: 100px;
-
-          position: absolute;
-          margin: 120px auto 20px;
-          z-index:-1;
-          transition: ease 1s;
-      }
-
-      .cloud:after, .cloud:before {
-          content: '';
-          position: absolute;
-          background: #33cc99;
-          z-index: -1
-      }
-
-      .cloud:after {
-          width: 100px; height: 100px;
-          top: -50px; left: 50px;
-
-          border-radius: 100px;
-          -webkit-border-radius: 100px;
-          -moz-border-radius: 100px;
-      }
-
-      .cloud:before {
-          width: 180px; height: 180px;
-          top: -90px; right: 50px;
-
-          border-radius: 200px;
-          -webkit-border-radius: 200px;
-          -moz-border-radius: 200px;
-      }
-      
-      .x1 {
-          top:-50px;
-          left:100px;
-          -webkit-transform: scale(0.3);
-          -moz-transform: scale(0.3);
-          transform: scale(0.3);
-          opacity: 0.9;
-          -webkit-animation: moveclouds 15s linear infinite;
-          -moz-animation: moveclouds 15s linear infinite;
-          -o-animation: moveclouds 15s linear infinite;
-      }
-      
-      .x1_5{
-          top:-80px;
-          left:250px;
-          -webkit-transform: scale(0.3);
-          -moz-transform: scale(0.3);
-          transform: scale(0.3);
-          -webkit-animation: moveclouds 17s linear infinite;
-          -moz-animation: moveclouds 17s linear infinite;
-          -o-animation: moveclouds 17s linear infinite; 
-      }
-
-      .x2 {
-          left: 250px;
-          top:30px;
-          -webkit-transform: scale(0.6);
-          -moz-transform: scale(0.6);
-          transform: scale(0.6);
-          opacity: 0.6; 
-          -webkit-animation: moveclouds 25s linear infinite;
-          -moz-animation: moveclouds 25s linear infinite;
-          -o-animation: moveclouds 25s linear infinite;
-      }
-
-      .x3 {
-          left: 250px; bottom: -70px;
-
-          -webkit-transform: scale(0.6);
-          -moz-transform: scale(0.6);
-          transform: scale(0.6);
-          opacity: 0.8; 
-
-          -webkit-animation: moveclouds 25s linear infinite;
-          -moz-animation: moveclouds 25s linear infinite;
-          -o-animation: moveclouds 25s linear infinite;
-      }
-
-      .x4 {
-          left: 470px; botttom: 20px;
-
-          -webkit-transform: scale(0.75);
-          -moz-transform: scale(0.75);
-          transform: scale(0.75);
-          opacity: 0.75;
-
-          -webkit-animation: moveclouds 18s linear infinite;
-          -moz-animation: moveclouds 18s linear infinite;
-          -o-animation: moveclouds 18s linear infinite;
-      }
-
-      .x5 {
-          left: 200px; top: 300px;
-
-          -webkit-transform: scale(0.5);
-          -moz-transform: scale(0.5);
-          transform: scale(0.5);
-          opacity: 0.8; 
-
-          -webkit-animation: moveclouds 20s linear infinite;
-          -moz-animation: moveclouds 20s linear infinite;
-          -o-animation: moveclouds 20s linear infinite;
-      }
-
-      @-webkit-keyframes moveclouds {
-          0% {margin-left: 1000px;}
-          100% {margin-left: -1000px;}
-      }
-      @-moz-keyframes moveclouds {
-          0% {margin-left: 1000px;}
-          100% {margin-left: -1000px;}
-      }
-      @-o-keyframes moveclouds {
-          0% {margin-left: 1000px;}
-          100% {margin-left: -1000px;}
-      }
-</style>
+              hr{
+                  padding: 0;
+                  border: none;
+                  border-top: 5px solid #fff;
+                  color: #fff;
+                  text-align: center;
+                  margin: 0px auto;
+                  width: 420px;
+                  height:10px;
+                  z-index: -10;
+              }
+              
+              hr:after {
+                  content: "\2022";
+                  display: inline-block;
+                  position: relative;
+                  top: -0.75em;
+                  font-size: 2em;
+                  padding: 0 0.2em;
+                  background: #33cc99;
+              }
+              
+              .cloud {
+                  width: 350px; height: 120px;
+  
+                  background: #33cc99;
+                  background: linear-gradient(top, #33cc99 100%);
+                  background: -webkit-linear-gradient(top, #33cc99 100%);
+                  background: -moz-linear-gradient(top, #33cc99 100%);
+                  background: -ms-linear-gradient(top, #33cc99 100%);
+                  background: -o-linear-gradient(top, #33cc99 100%);
+  
+                  border-radius: 100px;
+                  -webkit-border-radius: 100px;
+                  -moz-border-radius: 100px;
+  
+                  position: absolute;
+                  margin: 120px auto 20px;
+                  z-index:-1;
+                  transition: ease 1s;
+              }
+  
+              .cloud:after, .cloud:before {
+                  content: '';
+                  position: absolute;
+                  background: #33cc99;
+                  z-index: -1
+              }
+  
+              .cloud:after {
+                  width: 100px; height: 100px;
+                  top: -50px; left: 50px;
+  
+                  border-radius: 100px;
+                  -webkit-border-radius: 100px;
+                  -moz-border-radius: 100px;
+              }
+  
+              .cloud:before {
+                  width: 180px; height: 180px;
+                  top: -90px; right: 50px;
+  
+                  border-radius: 200px;
+                  -webkit-border-radius: 200px;
+                  -moz-border-radius: 200px;
+              }
+              
+              .x1 {
+                  top:-50px;
+                  left:100px;
+                  -webkit-transform: scale(0.3);
+                  -moz-transform: scale(0.3);
+                  transform: scale(0.3);
+                  opacity: 0.9;
+                  -webkit-animation: moveclouds 15s linear infinite;
+                  -moz-animation: moveclouds 15s linear infinite;
+                  -o-animation: moveclouds 15s linear infinite;
+              }
+              
+              .x1_5{
+                  top:-80px;
+                  left:250px;
+                  -webkit-transform: scale(0.3);
+                  -moz-transform: scale(0.3);
+                  transform: scale(0.3);
+                  -webkit-animation: moveclouds 17s linear infinite;
+                  -moz-animation: moveclouds 17s linear infinite;
+                  -o-animation: moveclouds 17s linear infinite; 
+              }
+  
+              .x2 {
+                  left: 250px;
+                  top:30px;
+                  -webkit-transform: scale(0.6);
+                  -moz-transform: scale(0.6);
+                  transform: scale(0.6);
+                  opacity: 0.6; 
+                  -webkit-animation: moveclouds 25s linear infinite;
+                  -moz-animation: moveclouds 25s linear infinite;
+                  -o-animation: moveclouds 25s linear infinite;
+              }
+  
+              .x3 {
+                  left: 250px; bottom: -70px;
+  
+                  -webkit-transform: scale(0.6);
+                  -moz-transform: scale(0.6);
+                  transform: scale(0.6);
+                  opacity: 0.8; 
+  
+                  -webkit-animation: moveclouds 25s linear infinite;
+                  -moz-animation: moveclouds 25s linear infinite;
+                  -o-animation: moveclouds 25s linear infinite;
+              }
+  
+              .x4 {
+                  left: 470px; botttom: 20px;
+  
+                  -webkit-transform: scale(0.75);
+                  -moz-transform: scale(0.75);
+                  transform: scale(0.75);
+                  opacity: 0.75;
+  
+                  -webkit-animation: moveclouds 18s linear infinite;
+                  -moz-animation: moveclouds 18s linear infinite;
+                  -o-animation: moveclouds 18s linear infinite;
+              }
+  
+              .x5 {
+                  left: 200px; top: 300px;
+  
+                  -webkit-transform: scale(0.5);
+                  -moz-transform: scale(0.5);
+                  transform: scale(0.5);
+                  opacity: 0.8; 
+  
+                  -webkit-animation: moveclouds 20s linear infinite;
+                  -moz-animation: moveclouds 20s linear infinite;
+                  -o-animation: moveclouds 20s linear infinite;
+              }
+  
+              @-webkit-keyframes moveclouds {
+                  0% {margin-left: 1000px;}
+                  100% {margin-left: -1000px;}
+              }
+              @-moz-keyframes moveclouds {
+                  0% {margin-left: 1000px;}
+                  100% {margin-left: -1000px;}
+              }
+              @-o-keyframes moveclouds {
+                  0% {margin-left: 1000px;}
+                  100% {margin-left: -1000px;}
+              }
+      </style>
 </body>
 </html>

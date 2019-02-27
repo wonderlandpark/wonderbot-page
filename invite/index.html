@@ -1,7 +1,7 @@
 <html><head>
   <head>
     <meta charset="utf-8">
-    <title>원더봇</title>
+    <title>원더봇 - 초대하기</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="더 쉽고 나은 디스코드. 원더봇" name="description">
@@ -44,14 +44,14 @@
         <div class="container-fluid">
     
           <div id="logo" class="pull-left">
-            <h1><a href="#intro" class="scrollto">Wonder_Bot</a></h1>
+            <h1><a href="../index.html" class="scrollto">Wonder_Bot</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
           </div>
     
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a href="#intro">홈</a></li>
+              <li><a href="../index.html">홈</a></li>
               
               <li class="menu-has-children"><a href="">링크</a>
                 <ul>
@@ -61,7 +61,19 @@
                   <!-- <li><a href="#"></a></li> -->
                 </ul>
               </li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="menu-has-children"><a href="">문서</a>
+                <ul>
+                  <li><a href="https://wonderbot.xyz/tos.html">이용약관</a></li>
+                  <li><a href="https://wonderbot.xyz/privacy.html">개인정보취급방침</a></li>
+                  
+                
+                  <!-- <li><a href="#"></a></li> -->
+                </ul>
+    
+              </li>
+              <li class="menu-active"><a href="https://wonderbot.xyz/invite">초대하기</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
+              
             </ul>
           </nav><!-- #nav-menu-container -->
         </div>
@@ -80,7 +92,7 @@
 <span class="permissions">권한: <code id="number">0</code></span>
 
 <span class="equation">계산: <code id="equation">0x0</code></span>
-<h5>뭐가 뭔지 모르겠나요?                     <a href="https://discordapp.com/oauth2/authorize?client_id=387548561816027138&scope=bot&permissions=2146958847&redirect_uri=/invite/success.html"><strong>이곳</strong></a>에서 추천 권한으로 초대하세요!</h5>
+<h5>뭐가 뭔지 모르겠나요?                     <a href="ez.html"><strong>이곳</strong></a>에서 추천 권한으로 초대하세요!</h5>
 </p>
 </div>
 <div class="selector">
@@ -226,6 +238,7 @@
 
 <div class="oauth">
 <span>초대링크: <a href="#" id="invite"></a></span>
+<span>원더봇을 초대하시면 자동으로 <a href="https://wonderbot.xyz/tos.html">이용 약관(ToS)</a>와 <a href="https://wonderbot.xyz/privacy.html">개인정보취급방침</a>에 동의하게되는 점 숙지해주시기 바랍니다.</span>
 </div>
 </div>
 
@@ -244,8 +257,8 @@
                 <h4>바로가기</h4>
                 <ul>
                   <li><i class="ion-ios-arrow-right"></i> <a href="index.html">홈</a></li>
-                  <li><i class="ion-ios-arrow-right"></i> <a href="#">이용 약관</a></li>
-                  <li><i class="ion-ios-arrow-right"></i> <a href="#">개인정보 약관</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="https://wonderbot.xyz/tos">이용 약관</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="https://wonderbot.xyz/privacy">개인정보취급방침</a></li>
                 </ul>
               </div>
     
@@ -273,7 +286,7 @@
     
         <div class="container">
           <div class="copyright">
-            &copy; 2018~2019 <strong>Team. Wonder_Bot</strong>. All Rights Reserved
+            &copy; 2017~2019 <strong>Team. Wonder_Bot</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!--
@@ -352,32 +365,28 @@
         if(!noSet) {
             setHash("" + perm);
         }
-
+        var clientID = "387548561816027138"
+        var url = "https://discordapp.com/oauth2/authorize?client_id=387548561816027138&scope=bot&permissions="+ perm +"&response_type=code&redirect_uri=https%3A%2F%2Fwonderbot.xyz%2Finvite%2Fsuccess.html"
         if(perm != 0) {
-            var clientID = "387548561816027138"
+            
             
            
-  document.getElementById("invite").className = "";
+  
             
 
-            
+            //https://discordapp.com/oauth2/authorize?client_id=387548561816027138&scope=bot&permissions=0&response_type=code&redirect_uri=https%3A%2F%2Fwonderbot.xyz%2Finvite%2Fsuccess.html
 
-            var url = "https://discordapp.com/oauth2/authorize?client_id=" + "387548561816027138" +
-                "&scope=" + "bot" +
-                "&permissions=" + perm +
-                "&redirect_uri=http://wonderbot.xyz/invite/success.html"
+            
 
             
          
 
-            document.getElementById("invite").innerHTML = document.getElementById("invite").href = url;
+            document.getElementById("invite").innerHTML = url
+            document.getElementById("invite").href = url;
         } else {
             
-            document.getElementById("invite").innerHTML = "https://discordapp.com/oauth2/authorize?client_id=" + "387548561816027138" +
-                "&scope=" + "bot" +
-                "&permissions=" + perm +
-                "&redirect_uri=http://wonderbot.xyz/invite/success.html";
-            document.getElementById("invite").href = document.getElementById("invite").innerHTML;
+            document.getElementById("invite").innerHTML = url
+            document.getElementById("invite").href = url
         }
     }
 
@@ -414,5 +423,5 @@
     syncCheckboxes(+getHash());
     recalculate(null, null, true);
 </script>
-<script>document.open("https://wonderbot.xyz/invite")</script>
+
 </body></html>

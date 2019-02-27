@@ -168,7 +168,7 @@ header #logo img {
   right: 0;
 }
 
-#intro .carousel-content {
+.carousel-content {
   text-align: center;
 }
 
@@ -244,7 +244,7 @@ header #logo img {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
+.btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1509,8 +1509,18 @@ section {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
-
+  margin: 0.67em 0;
+  vertical-align: middle; }
+  .tos {
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-size: 15px;
+    margin: 0.67em 0; }
+.wonderbot {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color:#18d26e;
+}
 h1.top {
   font-size: 2em;
   margin: 0.67em 0;
@@ -1943,7 +1953,7 @@ header>span {
 .title {
     height: 100%;
     width: 100%;
-
+    text-align: center;
     margin: 0;
     outline: 0;
     padding: 0;
